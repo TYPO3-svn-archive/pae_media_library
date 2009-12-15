@@ -1,0 +1,137 @@
+
+
+plugin.tx_paemedialibrary_pi1 {
+	
+	# cat=plugin.pae_media_library//; type=string; label= Website charset (used for correct XML playlists generation)
+	metaCharset = utf-8
+	
+	# cat=plugin.pae_media_library//; type=string; label= Date format: Date format (d/m/Y)
+	dateFormat = d/m/Y
+	
+	# cat=plugin.pae_media_library/file/1; type=file[html,htm,tmpl,txt]; label= Template File: HTML-template file to use for the medialibray. See EXT:pae_media_library/res/pae_media_library.html for an example
+	templateFile = EXT:pae_media_library/res/pae_media_library.html
+	
+	# cat=plugin.pae_media_library/file/2; type=file[css]; label= Template File: css file to use for the medialibrary. See /typo3conf/ext/pae_media_library/res/pae_media_library.css for an example
+	cssFile = /typo3conf/ext/pae_media_library/res/pae_media_library.css
+	
+	# cat=plugin.pae_media_library/enable/1; type=boolean; label= TS Priority: Give priority to TS settings over plugin setting
+	TSSettingsOverridePluginSettings = 0
+	
+	# cat=plugin.pae_media_library//; type=string; label= Flash version: Required flash player version for display
+	flash_version_req = 9.0115.0
+	
+	# cat=plugin.pae_media_library//; type=string; label= Streaming server: specify a streaming server URL for files in XML playlists if any
+	streaming_base_url = 
+	
+	# cat=plugin.pae_media_library/enable/2; type=boolean; label= Absolute URLs: Use to publish a playlist as a podcast or RSS feed not intended for JW player playback. If enabled, concatenates relative file names with the value of streaming_base_url in XML feeds
+	forceAbsoluteURLsInXMLPlaylists = 0
+	
+	# cat=plugin.pae_media_library//; type=string; label= Playlist title: Playlist title when publishing XML playlists
+	XMLPlaylistTitle = Playlist
+	
+	# cat=plugin.pae_media_library//; type=string; label= Playlist description: Playlist description when publishing XML playlists
+	XMLPlaylistDescription = This is a list of medias
+	
+	# cat=plugin.pae_media_library//; type=int+; label= Media player page UID: UID of the page where a medialibrary media player is inserted for playback of medias from XML playlists
+	singleMediaPlayerPageUID = 
+	
+	JWPlayer{
+		
+		# cat=plugin.pae_media_library//; type=options[regular,viral]; label= JW Player type: can be set to 'regular' or 'viral'
+		playertype = regular
+		
+		# cat=plugin.pae_media_library//; type=options[true,false]; label= Display meta information: Display meta information below player using HTML
+		show_meta = true
+		
+		# cat=plugin.pae_media_library//; type=options[bottom,top,over,none]; label= Control bar position: position of the controlbar. Can be set to 'top', 'bottom', 'over' and 'none'.
+		controlbar = bottom
+		
+		# cat=plugin.pae_media_library//; type=int+; label= Width: width of the display in pixels.
+		width = 320
+		
+		# cat=plugin.pae_media_library//; type=int+; label= Height: height of the display in pixels.
+		height = 240
+		
+		# cat=plugin.pae_media_library//; type=options[true,false]; label= Icons: set this to false to hide the play button and buffering icon in the middle of the video.
+		icons = true
+		
+		# cat=plugin.pae_media_library//; type=string; label= Backcolor: background color of the controlbar and playlist. This is white with the default skin.
+		backcolor = 
+		
+		# cat=plugin.pae_media_library//; type=string; label= Frontcolor: color of all icons and texts in the controlbar and playlist. 
+		frontcolor = 
+		
+		# cat=plugin.pae_media_library//; type=string; label= Lightcolor: color of an icon or text when you rollover it with the mouse.  
+		lightcolor = 
+		
+		# cat=plugin.pae_media_library//; type=string; label= Screencolor:  background color of the display.  
+		screencolor = 
+		
+		# cat=plugin.pae_media_library//; type=options[true,false]; label= Smoothing: sets the smoothing of videos, so you won't see blocks when a video is upscaled. Set this to 'false' to get performance improvements with old computers / big files.
+		smoothing = true
+		
+		# cat=plugin.pae_media_library//; type=options[fill,uniform,exactfit, none]; label= defines how to resize images in the display. Can be 'none' (no stretching), 'exactfit' (disproportionate), 'uniform' (stretch with black borders) or 'fill' (uniform, but completely fill the display). 
+		stretching = fill
+		
+		
+		# cat=plugin.pae_media_library//; type=file[jpg,png,gif]; label= Logo: location of an external jpg, png or gif image to show in a corner of the display. With the default skin, this is top-right, but every skin can freely place the logo. 
+		logo =
+		
+		# cat=plugin.pae_media_library//; type=options[none,bottom,over,right]; label= Playlist position: position of the playlist. Can be set to bottom, over, right or none. 
+		playlist = none
+		
+		# cat=plugin.pae_media_library//; type=int+; label= Playlistsize: when below this refers to the height, when right this refers to the width of the playlist.
+		playlistsize = 180
+		
+		
+		# cat=plugin.pae_media_library//; type=string; label= Skin: location of a SWF file with the player graphics. The JW player skinning documentation gives more info on this.
+		skin = 
+		
+		# cat=plugin.pae_media_library//; type=options[true,false]; label= Autostart: automatically start the player on load.
+		autostart = false
+		
+		# cat=plugin.pae_media_library//; type=int+; label= Bandwidth: Available bandwidth for streaming the file. Used predominantly for bitrate switching. Set this flashvar if you want to hint the player on the initial bandwidth.Overwritten every 2 seconds whenever a video or http stream is loading or an rtmp stream is playing.
+		bandwidth = 5000
+		
+		# cat=plugin.pae_media_library//; type=int+; label= Bufferlength: number of seconds of the file that has to be loaded before starting. Set this to a low value to enable instant-start and to a high value to get less mid-stream buffering.
+		bufferlength = 1
+		
+		# cat=plugin.pae_media_library//; type=options[play,link,fullscreen,none,mute,next]; label= Displayclick: what to do when one clicks the display. Can be play, link, fullscreen, none, mute, next. When set to none, the handcursor is also not shown.
+		displayclick = play
+		
+		# cat=plugin.pae_media_library//; type=options[true,false]; label= Dock: set this to true to show the dock with large buttons in the top right of the player.
+		dock = false
+		
+		# cat=plugin.pae_media_library//; type=int+; label= Item: playlistitem that should start to play. Use this to set a specific start-item.
+		item = 0
+		
+		# cat=plugin.pae_media_library//; type=options[_blank,_self]; label= Linktarget: browserframe where link from the display are opened in. Some possibilities are '_self' (same frame) or '_blank' (new browserwindow).
+		linktarget = _blank
+		
+		# cat=plugin.pae_media_library//; type=options[true,false]; label= Mute:  mute all sounds on startup. Is saved in a cookie.
+		mute = false
+		
+		# cat=plugin.pae_media_library//; type=options[none,list,always,single]; label= Repeat:  set to 'list' to play the entire playlist once, to 'always' to continously play the song/video/playlist and to 'single' to continue repeating the selected file in a playlist.
+		repeat = none
+		
+		# cat=plugin.pae_media_library//; type=options[true,false]; label= Shuffle: shuffle playback of playlist items.
+		shuffle = false
+		
+		# cat=plugin.pae_media_library//; type=int+; label= Volume: startup volume of the player. Can be 0 to 100. Is saved in a cookie.
+		volume = 90
+		
+		# cat=plugin.pae_media_library//; type=string; label= Plugins:  a powerful new feature, this is a comma-separated list of swf plugins to load (e.g. yousearch,viral). Each plugin has a unique ID and resides at plugins.longtailvideo.com. Go to the LongTailVideo AddOns section to see all available plugins.
+		plugins = 
+		
+		# cat=plugin.pae_media_library//; type=string; label= Flashvars:  allows specifying additional flashvars for plugins. Use the folowing syntax: (syntax: flashvar1_name: "flashvar1_value",flashvar2_name: "flashvar2_value", ...) 
+		flashvars =
+		
+		# cat=plugin.pae_media_library//; type=options[,arthropod,console,trace]; label= Debug:  set this to either arthropod, console or trace to let the player log events
+		debug =
+	}
+	
+}
+
+
+
+
