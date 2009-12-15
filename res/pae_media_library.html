@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Media library example template</title>
+    <link href="pae_media_library.css" rel="stylesheet" type="text/css" />
+    <!--
+		IMPORTANT: The stylesheet link below is only for testing the template file directly in a browser while editing it.
+		On the website the css styles for media library have to be included with an external file (see pae_media_library/res/pae_media_library.css) 
+        which you include via TypoSript in the "page" object.
+
+ -->
+</head>
+
+<body>
+
+<br />
+<br />
+<br />
+<h1>MEDIA LIBRARY TEMPLATES</h1>
+<h2>EXAMPLE</h2>
+<br />
+<br />
+<br />
+<pre>
+
+<strong>Common markers:</strong>
+These are substituted in all news item displaying templates:
+
+<em>Markers:</em>
+NEWS_UID - ID number (uid) of the news item
+
+
+<em>News Language Markers (see pi/locallang.php):</em>
+LATEST_HEADER - header for the LATEST element
+ 
+
+
+<em>Wrapped Subparts:</em>
+LINK_ITEM - link to the news item single display
+
+</pre>
+
+
+<br />
+<br />
+<br />
+<br />
+<hr />
+<br />
+<br />
+<br />
+<h3>TEMPLATE_MEDIAPLAYER</h3>
+<em>This is the template for the media player.</em>
+<br />
+<br />
+<br />
+<br />
+
+
+
+<!-- ###TEMPLATE_MEDIAPLAYER### begin
+	This is the template for inserting the JW Media player into a page, with the meta information of the media displayed below 
+-->
+<div class="tx_paemedialibrary_pi1-container">
+	<h2 class="tx_paemedialibrary_pi1-title">###MEDIA_TITLE###</h2>
+    <div class="tx_paemedialibrary_pi1-player">###PLAYER_SWF###</div>
+    <div class="tx_paemedialibrary_pi1-meta">
+    	<div class="tx_paemedialibrary_pi1-duration">
+        	<span class="tx_paemedialibrary_pi1-label">###MEDIA_DURATION_LABEL###</span> <span class="tx_paemedialibrary_pi1-element">###MEDIA_DURATION###</span>
+        </div>
+        <div class="tx_paemedialibrary_pi1-author">
+        	<span class="tx_paemedialibrary_pi1-label">###MEDIA_AUTHOR_LABEL###</span> <span class="tx_paemedialibrary_pi1-element">###MEDIA_AUTHOR###</span>
+        </div>
+        <div class="tx_paemedialibrary_pi1-date">
+        	<span class="tx_paemedialibrary_pi1-label">###MEDIA_DATE_LABEL###</span> <span class="tx_paemedialibrary_pi1-element">###MEDIA_DATE###</span>
+        </div>
+        <div class="tx_paemedialibrary_pi1-description">
+        	<span class="tx_paemedialibrary_pi1-label">###MEDIA_DESCRIPTION_LABEL###</span> <span class="tx_paemedialibrary_pi1-element">###MEDIA_DESCRIPTION###</span>
+        </div>
+        <!--
+        <div class="tx_paemedialibrary_pi1-keywords">
+        	<span class="tx_paemedialibrary_pi1-label">###MEDIA_KEYWORDS_LABEL###</span> <span class="tx_paemedialibrary_pi1-element">###MEDIA_KEYWORDS###</span>
+        </div>-->
+        <br style="clear:both;" />
+	</div>
+</div>
+<!-- ###TEMPLATE_MEDIAPLAYER### end -->
+
+
+</body>
+</html>

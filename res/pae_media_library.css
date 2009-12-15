@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tx_paemedialibrary_pi1_errorMessage{
+	color:red;
+	margin:1em 0 1em 0;
+}
+
+.tx_paemedialibrary_pi1-container{
+}
+
+.tx_paemedialibrary_pi1-title{
+	
+}
+
+.tx_paemedialibrary_pi1-player{
+}
+
+.tx_paemedialibrary_pi1-meta{
+	margin:1em 0 1.5em 0;
+	background-color:#CCC;
+	padding:1.5em 1em;
+}
+
+.tx_paemedialibrary_pi1-label{
+	font-weight:bold;
+	width:20%;
+	text-align:right;
+	display:block;
+	float:left;
+	margin-right:3%;
+}
+
+.tx_paemedialibrary_pi1-element{
+	width:76%;
+	display:block;
+	float:left;
+}
+
+.tx_paemedialibrary_pi1-duration, .tx_paemedialibrary_pi1-author, .tx_paemedialibrary_pi1-date, .tx_paemedialibrary_pi1-description, .tx_paemedialibrary_pi1-keywords{
+	clear:both;
+}
+
+.tx_paemedialibrary_pi1-description{
+	padding-top:.5em;
+}
