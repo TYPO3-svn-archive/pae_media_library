@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<T3DataStructure>
+ <meta type="array">
+<langChildren type="integer">0</langChildren>
+<langDisable type="integer">1</langDisable>
+</meta>
+ <sheets>
+  <sDEF>
+   <ROOT>
+    <TCEforms>
+     <sheetTitle>LLL:EXT:pae_media_library/locallang_db.xml:general.sheet</sheetTitle>
+    </TCEforms>
+    <type>array</type>
+     <el>
+	 <displayMode>
+       <TCEforms>
+        <label>LLL:EXT:pae_media_library/locallang_db.xml:displayMode</label>
+		<onChange>reload</onChange>
+        <config>
+         <type>select</type>
+         <items type="array">
+          <numIndex index="0" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:single</numIndex>
+           <numIndex index="1">single</numIndex>
+           </numIndex>
+		  <numIndex index="1" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:category</numIndex>
+           <numIndex index="1">category</numIndex>
+          </numIndex>
+		   <numIndex index="2" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:records</numIndex>
+           <numIndex index="1">records</numIndex>
+          </numIndex>
+		  <numIndex index="3" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:external_playlist</numIndex>
+           <numIndex index="1">playlist</numIndex>
+          </numIndex>
+          </items>
+         <minitems>0</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </displayMode>
+	  <selectedFile>
+       <TCEforms>
+        <exclude>1</exclude>
+        <label>LLL:EXT:pae_media_library/locallang_db.xml:selectedFile</label>
+		<displayCond>FIELD:displayMode:IN:single,single_mediaserver</displayCond>
+        <config>
+         <type>group</type>
+         <internal_type>db</internal_type>
+         <allowed>tx_dam</allowed>
+         <size>1</size>
+         <maxitems>1</maxitems>
+         <minitems>0</minitems>
+         <show_thumbs>1</show_thumbs>
+        </config>
+       </TCEforms>
+      </selectedFile>
+	  <streaming_base_url>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:streaming_base_url</label>
+			<config>
+				<type>input</type>
+				<size>80</size>
+				<checkbox></checkbox>
+				<default></default> 
+			</config>
+		</TCEforms>
+	</streaming_base_url>
+	  <selectedCategories>
+       <TCEforms>
+        <exclude>1</exclude>
+        <label>LLL:EXT:pae_media_library/locallang_db.xml:selectedCategories</label>
+		<displayCond>FIELD:displayMode:=:category</displayCond>
+        <config>
+         <type>group</type>
+         <internal_type>db</internal_type>
+         <allowed>tx_dam_cat</allowed>
+         <size>5</size>
+         <maxitems>500</maxitems>
+         <minitems>0</minitems>
+         <show_thumbs>1</show_thumbs>
+        </config>
+       </TCEforms>
+      </selectedCategories>
+	  <selectedRecords>
+       <TCEforms>
+        <exclude>1</exclude>
+        <label>LLL:EXT:pae_media_library/locallang_db.xml:selectedRecords</label>
+		<displayCond>FIELD:displayMode:=:records</displayCond>
+        <config>
+         <type>group</type>
+         <internal_type>db</internal_type>
+         <allowed>tx_dam</allowed>
+         <size>5</size>
+         <maxitems>500</maxitems>
+         <minitems>0</minitems>
+         <show_thumbs>1</show_thumbs>
+        </config>
+       </TCEforms>
+      </selectedRecords>
+		<playlist_url>
+			<TCEforms>
+				<exclude>1</exclude>
+				<label>LLL:EXT:pae_media_library/locallang_db.xml:playlist_url</label>
+				<displayCond>FIELD:displayMode:=:playlist</displayCond>
+				<config>
+					<type>input</type>
+					<size>80</size>
+					<checkbox></checkbox>
+					<default></default> 
+				</config>
+			</TCEforms>
+		</playlist_url>
+     </el>
+    </ROOT>
+   </sDEF>
+   
+   
+   
+   <JW_Player>
+   <ROOT>
+    <TCEforms>
+     <sheetTitle>LLL:EXT:pae_media_library/locallang_db.xml:jwplayer.sheet</sheetTitle>
+    </TCEforms>
+    <type>array</type>
+     <el>
+	  <flash_version_req>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:flash_version_req</label>
+			<config>
+				<type>input</type>
+				<size>5</size>
+				<checkbox></checkbox>
+				<default>9.0115.0</default> 
+			</config>
+		</TCEforms>
+	</flash_version_req>
+	  <width>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:width</label>
+			<config>
+				<type>input</type>
+				<size>5</size>
+				<checkbox></checkbox>
+				<default>320</default>
+			</config>
+		</TCEforms>
+	</width>
+	<height>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:height</label>
+			<config>
+				<type>input</type>
+				<size>5</size>
+				<checkbox></checkbox>
+				<default>240</default>
+			</config>
+		</TCEforms>
+	</height>
+	<jw_playertype>
+       <TCEforms>
+        <label>LLL:EXT:pae_media_library/locallang_db.xml:playertype</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+          <numIndex index="0" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:playertype.regular</numIndex>
+           <numIndex index="1">regular</numIndex>
+           </numIndex>
+          <numIndex index="1" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:playertype.viral</numIndex>
+           <numIndex index="1">viral</numIndex>
+          </numIndex>
+		 
+          </items>
+         <minitems>0</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </jw_playertype>
+	  
+	  <jw_show_meta>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:show_meta</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+				   <numIndex index="0" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:enable</numIndex>
+				   <numIndex index="1">true</numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:disable</numIndex>
+				   <numIndex index="1">false</numIndex>
+				   </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+		</TCEforms>
+	</jw_show_meta>
+	  
+	<jw_controlbar>
+       <TCEforms>
+        <label>LLL:EXT:pae_media_library/locallang_db.xml:controlbar</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+          <numIndex index="0" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:controlbar.bottom</numIndex>
+           <numIndex index="1">bottom</numIndex>
+           </numIndex>
+		   <numIndex index="1" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:controlbar.top</numIndex>
+           <numIndex index="1">top</numIndex>
+           </numIndex>
+          <numIndex index="2" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:controlbar.over</numIndex>
+           <numIndex index="1">over</numIndex>
+          </numIndex>
+		  <numIndex index="3" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:controlbar.none</numIndex>
+           <numIndex index="1">none</numIndex>
+          </numIndex>
+          </items>
+         <minitems>0</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </jw_controlbar>
+	  
+	  <jw_backcolor>
+	  <TCEforms>
+	   <label>LLL:EXT:pae_media_library/locallang_db.xml:backcolor</label>
+       <config>
+		<type>input</type>
+		<size>10</size>
+		<default></default>
+		<wizards>
+		  <colorpick>
+			<type>colorbox</type>
+			<title>LLL:EXT:pae_media_library/locallang_db.xml:pick.color</title>
+			<script>wizard_colorpicker.php</script>
+			<dim>10x10</dim>
+			<tableStyle>border: solid 1px black; margin-left: 5px;</tableStyle>
+			<JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+			<exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+		  </colorpick>
+		</wizards>
+	  </config>
+	  </TCEforms>
+	</jw_backcolor> 
+	
+	<jw_frontcolor>
+	  <TCEforms>
+	   <label>LLL:EXT:pae_media_library/locallang_db.xml:frontcolor</label>
+       <config>
+		<type>input</type>
+		<size>10</size>
+		<default></default>
+		<wizards>
+		  <colorpick>
+			<type>colorbox</type>
+			<title>LLL:EXT:pae_media_library/locallang_db.xml:pick.color</title>
+			<script>wizard_colorpicker.php</script>
+			<dim>10x10</dim>
+			<tableStyle>border: solid 1px black; margin-left: 5px;</tableStyle>
+			<JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+			<exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+		  </colorpick>
+		</wizards>
+	  </config>
+	  </TCEforms>
+	</jw_frontcolor> 
+	<jw_lightcolor>
+	  <TCEforms>
+	   <label>LLL:EXT:pae_media_library/locallang_db.xml:lightcolor</label>
+       <config>
+		<type>input</type>
+		<size>10</size>
+		<default></default>
+		<wizards>
+		  <colorpick>
+			<type>colorbox</type>
+			<title>LLL:EXT:pae_media_library/locallang_db.xml:pick.color</title>
+			<script>wizard_colorpicker.php</script>
+			<dim>10x10</dim>
+			<tableStyle>border: solid 1px black; margin-left: 5px;</tableStyle>
+			<JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+			<exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+		  </colorpick>
+		</wizards>
+	  </config>
+	  </TCEforms>
+	</jw_lightcolor>
+	<jw_screencolor>
+	  <TCEforms>
+	   <label>LLL:EXT:pae_media_library/locallang_db.xml:screencolor</label>
+       <config>
+		<type>input</type>
+		<size>10</size>
+		<default></default>
+		<wizards>
+		  <colorpick>
+			<type>colorbox</type>
+			<title>LLL:EXT:pae_media_library/locallang_db.xml:pick.color</title>
+			<script>wizard_colorpicker.php</script>
+			<dim>10x10</dim>
+			<tableStyle>border: solid 1px black; margin-left: 5px;</tableStyle>
+			<JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+			<exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+		  </colorpick>
+		</wizards>
+	  </config>
+	  </TCEforms>
+	</jw_screencolor>
+	<jw_smoothing>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:smoothing</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+				  <numIndex index="0" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:smoothing.enable</numIndex>
+				   <numIndex index="1">true</numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:smoothing.disable</numIndex>
+				   <numIndex index="1">false</numIndex>
+				   </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+		</TCEforms>
+	</jw_smoothing>
+	<jw_stretching>
+       <TCEforms>
+        <label>LLL:EXT:pae_media_library/locallang_db.xml:stretching</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+		 <numIndex index="0" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:stretching.fill</numIndex>
+           <numIndex index="1">fill</numIndex>
+           </numIndex>
+          <numIndex index="1" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:stretching.uniform</numIndex>
+           <numIndex index="1">uniform</numIndex>
+           </numIndex>
+          <numIndex index="2" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:stretching.none</numIndex>
+           <numIndex index="1">none</numIndex>
+          </numIndex>
+		  <numIndex index="3" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:stretching.exactfit</numIndex>
+           <numIndex index="1">exactfit</numIndex>
+          </numIndex>
+          </items>
+         <minitems>0</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </jw_stretching>
+	  
+	  <jw_icons>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:icons</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+				  <numIndex index="0" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:enable</numIndex>
+				   <numIndex index="1">true</numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:disable</numIndex>
+				   <numIndex index="1">false</numIndex>
+				   </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+		</TCEforms>
+	</jw_icons>
+	
+	<jw_logo>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:logo</label>
+			<config>
+				<type>group</type>
+				<internal_type>file</internal_type>
+				<allowed>gif,png,jpg,jpeg</allowed>
+				<max_size>1000</max_size>
+				<uploadfolder>uploads/tx_paemedialibrary</uploadfolder>
+				<show_thumbs>1</show_thumbs>
+				<size>1</size>
+				<maxitems>1</maxitems>
+				<minitems>0</minitems>
+			</config>
+		</TCEforms>
+	</jw_logo>
+	
+	<jw_playlist>
+       <TCEforms>
+        <label>LLL:EXT:pae_media_library/locallang_db.xml:playlist</label>
+		<config>
+         <type>select</type>
+         <items type="array">
+		 <numIndex index="0" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:playlist.none</numIndex>
+           <numIndex index="1">none</numIndex>
+           </numIndex>
+          <numIndex index="1" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:playlist.bottom</numIndex>
+           <numIndex index="1">bottom</numIndex>
+           </numIndex>
+          <numIndex index="2" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:playlist.over</numIndex>
+           <numIndex index="1">over</numIndex>
+          </numIndex>
+		  <numIndex index="3" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:playlist.right</numIndex>
+           <numIndex index="1">right</numIndex>
+          </numIndex>
+          </items>
+         <minitems>0</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </jw_playlist>
+	  
+	   <jw_playlistsize>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:playlistsize</label>
+			<config>
+				<type>input</type>
+				<size>5</size>
+				<checkbox></checkbox>
+				<default>180</default>
+			</config>
+		</TCEforms>
+	</jw_playlistsize>
+	
+	<jw_skin>
+       <TCEforms>
+        <exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:skin</label>
+			<exclude>1</exclude>
+        <config>
+         <type>input</type>
+		<size>15</size>
+		<max>256</max>
+		<checkbox></checkbox>
+		<eval>trim</eval>
+		<wizards type="array">
+			<_PADDING type="integer">2</_PADDING>
+			<link type="array">
+				<type>popup</type>
+				<title>Link</title>
+				<icon>link_popup.gif</icon>
+				<script>browse_links.php?mode=wizard</script>
+				<params>
+					<allowedExtensions>swf</allowedExtensions>
+					<blindLinkOptions>mail,page,spec,url,folder</blindLinkOptions>
+				</params>
+				<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+			</link>
+		</wizards>
+        </config>
+       </TCEforms>
+    </jw_skin>
+	  
+	  <jw_autostart>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:autostart</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+				  <numIndex index="0" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:disable</numIndex>
+				   <numIndex index="1">false</numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:enable</numIndex>
+				   <numIndex index="1">true</numIndex>
+				   </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+		</TCEforms>
+	</jw_autostart>
+	<jw_bandwidth>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:bandwidth</label>
+			<config>
+				<type>input</type>
+				<size>5</size>
+				<checkbox></checkbox>
+				<default>5000</default>
+			</config>
+		</TCEforms>
+	</jw_bandwidth>
+	<jw_bufferlength>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:bufferlength</label>
+			<config>
+				<type>input</type>
+				<size>2</size>
+				<checkbox></checkbox>
+				<default>1</default>
+			</config>
+		</TCEforms>
+	</jw_bufferlength>
+	
+	<jw_displayclick>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:displayclick</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+				  <numIndex index="0" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:displayclick.play</numIndex>
+				   	<numIndex index="1">play</numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:displayclick.link</numIndex>
+				   	<numIndex index="1">link</numIndex>
+				   </numIndex>
+				   <numIndex index="2" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:displayclick.fullscreen</numIndex>
+				   	<numIndex index="1">fullscreen</numIndex>
+				   </numIndex>
+				   <numIndex index="3" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:displayclick.none</numIndex>
+				   	<numIndex index="1">none</numIndex>
+				   </numIndex>
+				   <numIndex index="4" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:displayclick.mute</numIndex>
+				   	<numIndex index="1">mute</numIndex>
+				   </numIndex>
+				   <numIndex index="5" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:displayclick.next</numIndex>
+				   	<numIndex index="1">next</numIndex>
+				   </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+		</TCEforms>
+	</jw_displayclick>
+	
+	<jw_dock>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:dock</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+				  <numIndex index="0" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:disable</numIndex>
+				   <numIndex index="1">false</numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:enable</numIndex>
+				   <numIndex index="1">true</numIndex>
+				   </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+		</TCEforms>
+	</jw_dock>
+	
+	<jw_item>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:item</label>
+			<config>
+				<type>input</type>
+				<size>3</size>
+				<checkbox></checkbox>
+				<default>0</default>
+			</config>
+		</TCEforms>
+	</jw_item>
+	
+	<jw_linktarget>
+			<TCEforms>
+				<exclude>1</exclude>
+				<label>LLL:EXT:pae_media_library/locallang_db.xml:linktarget</label>
+				<config>
+				<type>select</type>
+				<items type="array">
+				   <numIndex index="0" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:linktarget.blank</numIndex>
+				   	<numIndex index="1">_blank</numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:linktarget.self</numIndex>
+				   	<numIndex index="1">_self</numIndex>
+				  </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+			</TCEforms>
+		</jw_linktarget>
+		
+		<jw_mute>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:mute</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+				  <numIndex index="0" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:disable</numIndex>
+				   <numIndex index="1">false</numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:enable</numIndex>
+				   <numIndex index="1">true</numIndex>
+				   </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+		</TCEforms>
+		</jw_mute>
+		
+		<jw_repeat>
+			<TCEforms>
+				<exclude>1</exclude>
+				<label>LLL:EXT:pae_media_library/locallang_db.xml:repeat</label>
+				<config>
+				<type>select</type>
+				<items type="array">
+				   <numIndex index="0" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:repeat.none</numIndex>
+				   	<numIndex index="1">none</numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:repeat.list</numIndex>
+				   	<numIndex index="1">list</numIndex>
+				   </numIndex>
+				   <numIndex index="2" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:repeat.always</numIndex>
+				   	<numIndex index="1">always</numIndex>
+				  </numIndex>
+				  <numIndex index="3" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:repeat.single</numIndex>
+				   	<numIndex index="1">single</numIndex>
+				  </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+			</TCEforms>
+		</jw_repeat>
+		
+		<jw_shuffle>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:shuffle</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+				  <numIndex index="0" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:disable</numIndex>
+				   <numIndex index="1">false</numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:enable</numIndex>
+				   <numIndex index="1">true</numIndex>
+				   </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+		</TCEforms>
+	</jw_shuffle>
+	
+	<jw_volume>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:volume</label>
+			<config>
+				<type>input</type>
+				<size>3</size>
+				<checkbox></checkbox>
+				<default>90</default>
+			</config>
+		</TCEforms>
+	</jw_volume>
+	
+	<jw_plugins>
+			<TCEforms>
+				<exclude>1</exclude>
+				<label>LLL:EXT:pae_media_library/locallang_db.xml:plugins</label>
+				<config>
+					<type>input</type>
+					<size>80</size>
+					<checkbox></checkbox>
+					<default></default> 
+				</config>
+			</TCEforms>
+	</jw_plugins>
+	
+	<jw_flashvars>
+			<TCEforms>
+				<exclude>1</exclude>
+				<label>LLL:EXT:pae_media_library/locallang_db.xml:flashvars</label>
+				<config>
+					<type>text</type> 
+				</config>
+			</TCEforms>
+	</jw_flashvars>
+		
+	<jw_debug>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:pae_media_library/locallang_db.xml:debug</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+				  <numIndex index="0" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:debug.disabled</numIndex>
+				   	<numIndex index="1"></numIndex>
+				   </numIndex>
+				   <numIndex index="1" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:debug.arthropod</numIndex>
+				   	<numIndex index="1">arthropod</numIndex>
+				   </numIndex>
+				   <numIndex index="2" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:debug.console</numIndex>
+				   	<numIndex index="1">console</numIndex>
+				   </numIndex>
+				   <numIndex index="3" type="array">
+				   	<numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:debug.trace</numIndex>
+				   	<numIndex index="1">trace</numIndex>
+				   </numIndex>
+				</items>
+				<minitems>0</minitems>
+				 <maxitems>1</maxitems>
+				 <size>1</size>
+			</config>
+		</TCEforms>
+	</jw_debug>
+	</el>
+    </ROOT>
+   </JW_Player>
+  </sheets>
+</T3DataStructure>
