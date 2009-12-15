@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_paemedialibrary_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="error">Error</label>
+			<label index="media_offline">This media is currently offline and can not be viewed.</label>
+			<label index="no_single_media">No file has been specified as a media source. Please set a file.</label>
+			
+			<label index="media.duration">Duration:</label>
+			<label index="media.author">Author:</label>
+			<label index="media.date">Date:</label>
+			<label index="media.description">Description:</label>
+			<label index="media.keywords">Tags:</label>
+		</languageKey>
+		
+		<languageKey index="fr" type="array">
+			<label index="error">Erreur</label>
+			<label index="media_offline">Ce média est hors-ligne et ne peut être consulté.</label>
+			<label index="no_single_media">Aucun fichier n'a été spécifié comme source de lecture. Spécifiez un fichier.</label>
+			
+			<label index="media.duration">Durée :</label>
+			<label index="media.author">Auteur :</label>
+			<label index="media.date">Date :</label>
+			<label index="media.description">Description :</label>
+			<label index="media.keywords">Tags :</label>
+		</languageKey>
+	</data>
+</T3locallang>
