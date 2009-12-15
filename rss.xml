@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+	xmlns:jwplayer="http://developer.longtailvideo.com/trac/wiki/FlashFormats">
+	<channel>
+		<title>Playlist</title>
+		<item>
+			<title>Conseil Communautaire du 25/09/2009</title>
+			<link></link>
+			<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec arcu augue. Morbi nec est mauris. Ut nec mi vitae arcu lobortis hendrerit. Nam sit amet diam felis, eget iaculis sapien. Morbi hendrerit molestie tempus. Nullam pretium suscipit elit a venenatis. In nibh lacus, ullamcorper sed molestie et, adipiscing sed tellus. Aliquam a velit tortor. Quisque felis lectus, sagittis vel faucibus in, luctus eget quam. Mauris posuere purus vel mi dignissim adipiscing. Suspendisse enim magna, vulputate quis semper sed, ullamcorper eu ipsum.</description>
+
+			<enclosure url="PAE_CC_250909.flv" type="text/plain" length="0"/>
+			<itunes:author></itunes:author>
+		</item>
+	</channel>
+</rss>
+
+<!-- Parsetime: 333 ms-->

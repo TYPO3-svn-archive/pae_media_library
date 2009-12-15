@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'pae_media_library'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.list_type_pi1">Media player</label>
+			<label index="tt_content.list_type_pi2">Media library</label>
+			<label index="tx_dam.tx_paemedialibrary_file_use_advanced_location">Use advanced location</label>
+			<label index="tx_dam.tx_paemedialibrary_file_advanced_location">Advanced file location</label>
+			<label index="tx_dam.tx_paemedialibrary_thumbnail_user_defined">Preview image (user defined)</label>
+			<label index="tx_dam.tx_paemedialibrary_duration">Duration (free text)</label>
+			<label index="tx_dam.tx_paemedialibrary_duration_seconds">Duration (seconds)</label>
+			<label index="tx_dam.tx_paemedialibrary_start_seconds">Start time (seconds from begining), valid for streaming media only</label>
+			<label index="tx_dam.tx_paemedialibrary_archived">Archived</label>
+			<label index="tx_dam.tx_paemedialibrary_archive_date">Archive date</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.0">Video</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.1">Sound</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.2">Image</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.3">YouTube</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.4">Http</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.5">Rtmp</label>
+			<label index="tx_dam.tx_paemedialibrary_type">Media type (JW Player)</label>
+			<label index="tx_dam_cat.tx_paemedialibrary_thumbnail">Category image</label>
+			<label index="tx_dam_tab.div_media_library">Media library</label>
+			<label index="tx_dam.tx_paemedialibrary_custommediatype">Advanced file media type</label>
+			<label index="tx_dam.tx_paemedialibrary_mediatype_image">Image</label>
+			<label index="tx_dam.tx_paemedialibrary_mediatype_audio">Audio</label>
+			<label index="tx_dam.tx_paemedialibrary_mediatype_video">Video</label>
+			<label index="displayMode">Display mode</label>
+			<label index="single">Single file</label>
+			<label index="category">Playlist from DAM Category</label>
+			<label index="records">Playlist from DAM Records</label>
+			<label index="external_playlist">Playlist from URL (XSPF, RSS(itunes:, media:), ASX, ATOM)</label>
+			<label index="selectedFile">Selected DAM file</label>
+			<label index="selectedCategories">Selected DAM categories</label>
+			<label index="selectedRecords">Selected DAM records</label>
+			<label index="playlist_url">Custom playlist URL</label>
+			<label index="jwplayer.sheet">JW Player 4.6</label>
+			<label index="general.sheet">General</label>
+			<label index="controlbar">Control bar</label>
+			<label index="controlbar.bottom">Bottom</label>
+			<label index="controlbar.top">Top</label>
+			<label index="controlbar.over">Over</label>
+			<label index="controlbar.none">None</label>
+			<label index="playertype">Player type</label>
+			<label index="playertype.regular">Regular</label>
+			<label index="playertype.viral">Viral</label>
+			<label index="flash_version_req">Required flash version</label>
+			<label index="width">width</label>
+			<label index="height">height</label>
+			<label index="streaming_base_url">Streaming server base URL (leave blank for local media)</label>
+			
+			<label index="backcolor">Back color</label>
+			<label index="frontcolor">Front color</label>
+			<label index="lightcolor">Light color</label>
+			<label index="screencolor">Screencolor</label>
+			<label index="pick.color">Color picker</label>
+			
+			<label index="smoothing">Video smoothing</label>
+			<label index="smoothing.enable">Active</label>
+			<label index="smoothing.disable">Disabled</label>
+			
+			<label index="stretching">Video stretching</label>
+			<label index="stretching.uniform">Uniform (stretch with black borders)</label>
+			<label index="stretching.none">None (no stretching)</label>
+			<label index="stretching.exactfit">Exact fit (disproportionate)</label>
+			<label index="stretching.fill">Fill (uniform, but completely fill the display)</label>
+			
+			<label index="icons">Show the play button and buffering icon in the middle of the video</label>
+			<label index="enable">Yes</label>
+			<label index="disable">No</label>
+			
+			<label index="logo">Location of an external jpg, png or gif image to show in a corner of the display</label>
+			
+			<label index="playlist">Playlist position</label>
+			<label index="playlist.none">None</label>
+			<label index="playlist.bottom">Bottom</label>
+			<label index="playlist.over">Over</label>
+			<label index="playlist.right">Right</label>
+			
+			<label index="playlistsize">Playlist size</label>
+			<label index="skin">JW player skin file (.swf)</label>
+			<label index="autostart">Automatically start playing</label>
+			<label index="bandwidth">Bandwidth (for bitrate switching)</label>
+			<label index="bufferlength">Buffer length (seconds)</label>
+			
+			<label index="displayclick">Display click action</label>
+			<label index="displayclick.play">Play media</label>
+			<label index="displayclick.link">Browse video link</label>
+			<label index="displayclick.fullscreen">Toggle fullscreen state</label>
+			<label index="displayclick.none">Do nothing</label>
+			<label index="displayclick.mute">Mute sound</label>
+			<label index="displayclick.next">Switch to next media</label>
+			<label index="dock">Use dock</label>
+			<label index="item">Playlistitem number that should start to play</label>
+			<label index="linktarget">Links target</label>
+			<label index="linktarget.self">_self</label>
+			<label index="linktarget.blank">_blank</label>
+			<label index="mute">Mute sound on startup</label>
+			
+			<label index="repeat">Repeat</label>
+			<label index="repeat.none">Disabled</label>
+			<label index="repeat.list">Playlist</label>
+			<label index="repeat.always">Always</label>
+			<label index="repeat.single">Single</label>
+			<label index="shuffle">Shuffle</label>
+			<label index="volume">Startup volume</label>
+			<label index="plugins">Plugins</label>
+			<label index="flashvars">Additional flashvars for plugins (syntax: syntax: flashvar1_name: "flashvar1_value",flashvar2_name: "flashvar2_value", ...)</label>
+			<label index="debug">JW player debugging</label>
+			<label index="debug.disabled">Disabled</label>
+			<label index="debug.arthropod">Arthropod</label>
+			<label index="debug.console">Console</label>
+			<label index="debug.trace">Trace</label>
+			<label index="show_meta">Display meta information below player</label>
+			
+			<label index="media.files">Media files</label>
+			<label index="media.local">Local media</label>
+			<label index="media.remote">Remote media</label>
+			<label index="media.source_file">Source file</label>
+			<label index="media.bitrate">Bitrate</label>
+			<label index="media.source_file_relative">Source file (relative to media server base URL)</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="tt_content.list_type_pi1">Lecteur multimédia</label>
+			<label index="tt_content.list_type_pi2">Librairie multimédia</label>
+			<label index="tx_dam.tx_paemedialibrary_file_use_advanced_location">Utiliser l'emplacement de fichier avancé</label>
+			<label index="tx_dam.tx_paemedialibrary_file_advanced_location">Emplacement de fichier avancé</label>
+			<label index="tx_dam.tx_paemedialibrary_thumbnail_user_defined">Image de prévisualisation (définition manuelle)</label>
+			<label index="tx_dam.tx_paemedialibrary_duration">Durée (texte libre)</label>
+			<label index="tx_dam.tx_paemedialibrary_duration_seconds">Durée (secondes)</label>
+			<label index="tx_dam.tx_paemedialibrary_start_seconds">Début lecture (en secondes depuis le début), valide pour les medias en streaming seulement</label>
+			<label index="tx_dam.tx_paemedialibrary_archived">Archivé</label>
+			<label index="tx_dam.tx_paemedialibrary_archive_date">Date d'archivage</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.0">Vidéo</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.1">Son</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.2">Image</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.3">YouTube</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.4">Http</label>
+			<label index="tx_dam.tx_paemedialibrary_type.I.5">Rtmp</label>
+			<label index="tx_dam.tx_paemedialibrary_type">Type de média (JW Player)</label>
+			<label index="tx_dam_cat.tx_paemedialibrary_thumbnail">Image de la catégorie</label>
+			<label index="tx_dam_tab.div_media_library">Mediathèque</label>
+			<label index="tx_dam.tx_paemedialibrary_custommediatype">Type de fichier avancé</label>
+			<label index="tx_dam.tx_paemedialibrary_mediatype_image">Image</label>
+			<label index="tx_dam.tx_paemedialibrary_mediatype_audio">Audio</label>
+			<label index="tx_dam.tx_paemedialibrary_mediatype_video">Video</label>
+			<label index="displayMode">Mode d'affichage</label>
+			<label index="single">Fichier simple</label>
+			<label index="category">Liste de lecture depuis categorie DAM</label>
+			<label index="records">Liste de lecture depuis enregistrements DAM</label>
+			<label index="external_playlist">Liste de lecture depuis URL externe (XSPF, RSS(itunes:, media:), ASX, ATOM)</label>
+			<label index="selectedFile">Fichier DAM sélectionné</label>
+			<label index="selectedCategories">Categories DAM sélectionnées</label>
+			<label index="selectedRecords">Enregistrements DAM sélectionnés</label>
+			<label index="playlist_url">URL de liste de lecture personnalisée</label>
+			<label index="jwplayer.sheet">JW Player 4.6</label>
+			<label index="general.sheet">General</label>
+			<label index="controlbar">Barre de contrôle</label>
+			<label index="controlbar.bottom">En bas</label>
+			<label index="controlbar.top">En haut</label>
+			<label index="controlbar.over">Par dessus</label>
+			<label index="controlbar.none">Aucune</label>
+			<label index="playertype">Type de lecteur</label>
+			<label index="playertype.regular">Normal</label>
+			<label index="playertype.viral">Viral</label>
+			<label index="flash_version_req">Version flash requise</label>
+			<label index="width">largeur</label>
+			<label index="height">hauteur</label>
+			<label index="streaming_base_url">URL de base du serveur de streaming (laissez vide si media local)</label>
+			
+			<label index="backcolor">Couleur de fond</label>
+			<label index="frontcolor">Couleur des symboles</label>
+			<label index="lightcolor">Couleur rollover</label>
+			<label index="screencolor">Couleur de l'écran</label>
+			<label index="pick.color">Sélection de couleur</label>
+			<label index="smoothing">Lissage vidéo</label>
+			<label index="smoothing.enable">Actif</label>
+			<label index="smoothing.disable">Inactif</label>
+			<label index="stretching">Etirement vidéo</label>
+			<label index="stretching.uniform">Uniforme (etirement avec bandes noires)</label>
+			<label index="stretching.none">Aucun (pas d'étirement)</label>
+			<label index="stretching.exactfit">Dimension exacte (disproportionné)</label>
+			<label index="stretching.fill">Remplissage (uniforme, mais rempli complètement l'affichage)</label>
+			
+			<label index="icons">Afficher l'icône lecture ou tampon de lecture sur la vidéo</label>
+			<label index="enable">Oui</label>
+			<label index="disable">Non</label>
+			
+			<label index="logo">Logo jpg, png ou gif à superposer sur la vidéo</label>
+			
+			<label index="playlist">Position de la liste de lecture</label>
+			<label index="playlist.none">Aucune</label>
+			<label index="playlist.bottom">En bas</label>
+			<label index="playlist.over">Par dessus</label>
+			<label index="playlist.right">A droite</label>
+			
+			<label index="playlistsize">Taille de la liste de lecture</label>
+			<label index="skin">fichier skin JW Player (.swf)</label>
+			<label index="autostart">Démarrage automatique de la lecture</label>
+			<label index="bandwidth">Bande passante (pour permutation automatique du bitrate)</label>
+			<label index="bufferlength">Durée du buffer (en secondes)</label>
+			
+			<label index="displayclick">Action sur le clic d'affichage</label>
+			<label index="displayclick.play">Lire le media</label>
+			<label index="displayclick.link">Ouvrir le lien associé à la vidéo</label>
+			<label index="displayclick.fullscreen">Basculer le mode plein écran</label>
+			<label index="displayclick.none">Ne rien faire</label>
+			<label index="displayclick.mute">Couper le son</label>
+			<label index="displayclick.next">Basculer sur le média suivant</label>
+			<label index="dock">Utiliser le dock</label>
+			<label index="item">Numéro de l'élement de la liste de lecture à jouer au démarrage</label>
+			<label index="linktarget">Cible des liens</label>
+			<label index="linktarget.self">_self</label>
+			<label index="linktarget.blank">_blank</label>
+			<label index="mute">Son désactivé au démarrage</label>
+			
+			<label index="repeat">Répétition</label>
+			<label index="repeat.none">Inactive</label>
+			<label index="repeat.list">Liste de lecture</label>
+			<label index="repeat.always">Tout</label>
+			<label index="repeat.single">Entrée</label>
+			
+			<label index="shuffle">Lecture aléatoire</label>
+			<label index="volume">Volume au démarrage</label>
+			<label index="plugins">Plugins</label>
+			<label index="flashvars">Flashvars supplémentaires pour les plugins (syntaxe: syntax: flashvar1_name: "flashvar1_value",flashvar2_name: "flashvar2_value", ...)</label>
+			
+			<label index="debug">Debogage JW player</label>
+			<label index="debug.disabled">Inactif</label>
+			<label index="debug.arthropod">Arthropod</label>
+			<label index="debug.console">Console</label>
+			<label index="debug.trace">Trace</label>
+			<label index="show_meta">Afficher la meta information sour le lecteur</label>
+			
+			
+			<label index="media.files">Fichiers média</label>
+			<label index="media.local">Media local</label>
+			<label index="media.remote">Media distant</label>
+			<label index="media.source_file">Fichier source</label>
+			<label index="media.bitrate">Bitrate</label>
+			<label index="media.source_file_relative">Fichier source (relatif à l'URL de base du serveur de média)</label>
+		</languageKey>
+	</data>
+</T3locallang>

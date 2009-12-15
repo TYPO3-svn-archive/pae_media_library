@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension 'pae_media_library'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">Media player</label>
+			<label index="pi1_plus_wiz_description">Displays a media player on page for displaying images, audio, video</label>
+			<label index="pi2_title">Media library</label>
+			<label index="pi2_plus_wiz_description">Displays selected media categories and their content</label>
+			
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="pi1_title">Lecteur multimédia</label>
+			<label index="pi1_plus_wiz_description">Affiche un lecteur multimédia sur la page pour afficher des images, de l'audio et de la vidéo</label>
+			<label index="pi2_title">Librairie multimédia</label>
+			<label index="pi2_plus_wiz_description">affiche les catégories de médias sélectionnées ainsi que leur contenu</label>
+			
+		</languageKey>
+	</data>
+</T3locallang>
