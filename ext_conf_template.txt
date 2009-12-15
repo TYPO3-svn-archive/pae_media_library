@@ -1,0 +1,8 @@
+# cat=basic//0; type=int+; label=TypeNum: the type ID for the XML output used by flash
+typeNum = 558
+
+ # cat=basic//30; type=boolean; label= Integrate realurl settings
+realurlintegration = 0
+
+
+
