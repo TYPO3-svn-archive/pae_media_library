@@ -86,6 +86,66 @@
         </config>
        </TCEforms>
       </selectedCategories>
+	  <sorting_criteria>
+       <TCEforms>
+        <label>LLL:EXT:pae_media_library/locallang_db.xml:sorting_criteria</label>
+		<displayCond>FIELD:displayMode:IN:category</displayCond>
+        <config>
+         <type>select</type>
+         <items type="array">
+          <numIndex index="0" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:creation_date</numIndex>
+           <numIndex index="1">date_cr</numIndex>
+           </numIndex>
+		  <numIndex index="1" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:modification_date</numIndex>
+           <numIndex index="1">date_mod</numIndex>
+          </numIndex>
+		   <numIndex index="2" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:title</numIndex>
+           <numIndex index="1">title</numIndex>
+          </numIndex>
+		  <numIndex index="3" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:filename</numIndex>
+           <numIndex index="1">file_name</numIndex>
+          </numIndex>
+		  <numIndex index="4" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:uid</numIndex>
+           <numIndex index="1">uid</numIndex>
+          </numIndex>
+		  <numIndex index="5" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:media_type</numIndex>
+           <numIndex index="1">media_type</numIndex>
+          </numIndex>
+          </items>
+         <minitems>0</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </sorting_criteria>
+	  <sorting_direction>
+       <TCEforms>
+        <label>LLL:EXT:pae_media_library/locallang_db.xml:sorting_direction</label>
+		<displayCond>FIELD:displayMode:IN:category</displayCond>
+        <config>
+         <type>select</type>
+         <items type="array">
+          <numIndex index="0" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:sorting_direction_asc</numIndex>
+           <numIndex index="1">ASC</numIndex>
+           </numIndex>
+		  <numIndex index="1" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:sorting_direction_desc</numIndex>
+           <numIndex index="1">DESC</numIndex>
+          </numIndex>
+          </items>
+         <minitems>0</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </sorting_direction>
 	  <selectedRecords>
        <TCEforms>
         <exclude>1</exclude>

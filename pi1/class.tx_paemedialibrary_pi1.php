@@ -248,7 +248,7 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 				$conf = array(
 				  'parameter' =>  $currentPageUID.','.$extConf['typeNum'], // Link to current page + page type
 				  // Set additional parameters 
-				  'additionalParams' => '&'.$this->prefixId.'[format]'.'='.$format.'&'.$this->prefixId.'[subFormat]'.'='.$subFormat.'&'.$this->prefixId.'[categories]'.'='.$this->lConf['selectedCategories'], 
+				  'additionalParams' => '&'.$this->prefixId.'[format]'.'='.$format.'&'.$this->prefixId.'[subFormat]'.'='.$subFormat.'&'.$this->prefixId.'[categories]'.'='.$this->lConf['selectedCategories'].'&'.$this->prefixId.'[sorting_criteria]'.'='.$this->lConf['sorting_criteria'].'&'.$this->prefixId.'[sorting_direction]'.'='.$this->lConf['sorting_direction'], 
 				  'useCacheHash' => $this->pi_checkCHash, // We must add cHash because we use parameters
 				  'returnLast' => 'url', // We want link only
 				);
@@ -256,7 +256,7 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 				
 			} else {
 				//generate regular URL
-				$media_src = urlencode("index.php?id=".$currentPageUID.'&type='.$extConf['typeNum'].'&'.$this->prefixId.'[format]'.'='.$format.'&'.$this->prefixId.'[subFormat]'.'='.$subFormat.'&'.$this->prefixId.'[categories]'.'='.$this->lConf['selectedCategories']);
+				$media_src = urlencode("index.php?id=".$currentPageUID.'&type='.$extConf['typeNum'].'&'.$this->prefixId.'[format]'.'='.$format.'&'.$this->prefixId.'[subFormat]'.'='.$subFormat.'&'.$this->prefixId.'[categories]'.'='.$this->lConf['selectedCategories'].'&'.$this->prefixId.'[sorting_criteria]'.'='.$this->lConf['sorting_criteria'].'&'.$this->prefixId.'[sorting_direction]'.'='.$this->lConf['sorting_direction']);
 			}
 			
 		}
@@ -270,6 +270,8 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 			//generate regular URL
 			$format = 'RSS';
 			$subFormat = 'itunes';
+			
+			
 				
 			if($extConf['realurlintegration']){
 				//generate url rewrited URL
@@ -574,6 +576,8 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 		$categories = $GLOBALS['TYPO3_DB']->cleanIntList(urldecode($this->piVars["categories"]));
 		$records = $GLOBALS['TYPO3_DB']->cleanIntList(urldecode($this->piVars["records"]));
 		$items = $GLOBALS['TYPO3_DB']->cleanIntList(urldecode($this->piVars["items"]));
+		$sorting_criteria = $this->piVars["sorting_criteria"];
+		$sorting_direction = $this->piVars["sorting_direction"];
 		
 		//overwrite session data since it has proven sometimes not to be correct
 		/*$session->prefixId = $_REQUEST("prefixId");
@@ -636,13 +640,22 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 				
 				//echo "dam_elements_local=".$dam_elements_local."<br /><br />";die();
 				
-				
+				if(isset($sorting_criteria) && $sorting_criteria != ""){
 				//then extract dam records for medias
-				$queryParts = array(
-					'SELECT' => "*",
-					'FROM' => "tx_dam",
-					'WHERE' => "uid IN (".$dam_elements_local.")".$this->cObj->enableFields('tx_dam')." ORDER BY `date_cr` DESC"
-				);
+					$queryParts = array(
+						'SELECT' => "*",
+						'FROM' => "tx_dam",
+						'WHERE' => "uid IN (".$dam_elements_local.")".$this->cObj->enableFields('tx_dam')." ORDER BY `".$sorting_criteria."` ".$sorting_direction
+					);
+				}else{
+					$queryParts = array(
+						'SELECT' => "*",
+						'FROM' => "tx_dam",
+						'WHERE' => "uid IN (".$dam_elements_local.")".$this->cObj->enableFields('tx_dam')
+					);
+				}
+				
+				//echo "SELECT ".$queryParts['SELECT']." FROM ".$queryParts['FROM']." WHERE ".$queryParts['WHERE']." ;<br />";
 				
 				$result = $GLOBALS['TYPO3_DB']->exec_SELECTquery(
 					$queryParts['SELECT'],

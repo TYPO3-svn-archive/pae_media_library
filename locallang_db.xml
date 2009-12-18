@@ -123,6 +123,16 @@
 			<label index="media.source_file">Source file</label>
 			<label index="media.bitrate">Bitrate</label>
 			<label index="media.source_file_relative">Source file (relative to media server base URL)</label>
+			<label index="sorting_criteria">Sort playlist elements by:</label>
+			<label index="creation_date">Creation date</label>
+			<label index="modification_date">Modification date</label>
+			<label index="title">Title</label>
+			<label index="filename">File name</label>
+			<label index="uid">Dam record uid</label>
+			<label index="media_type">Media type</label>
+			<label index="sorting_direction">Sorting direction:</label>
+			<label index="sorting_direction_asc">Ascending</label>
+			<label index="sorting_direction_desc">Descending</label>
 		</languageKey>
 		<languageKey index="fr" type="array">
 			<label index="tt_content.list_type_pi1">Lecteur multimédia</label>
@@ -243,6 +253,16 @@
 			<label index="media.source_file">Fichier source</label>
 			<label index="media.bitrate">Bitrate</label>
 			<label index="media.source_file_relative">Fichier source (relatif à l'URL de base du serveur de média)</label>
+			<label index="sorting_criteria">Trier les éléments de la playliste par:</label>
+			<label index="creation_date">Date de création</label>
+			<label index="modification_date">Date de modification</label>
+			<label index="title">Titre</label>
+			<label index="filename">nom de fichier</label>
+			<label index="uid">Uid de l'enregistrement DAM</label>
+			<label index="media_type">Typde du média</label>
+			<label index="sorting_direction">Sens du tri:</label>
+			<label index="sorting_direction_asc">Ascendant</label>
+			<label index="sorting_direction_desc">Descendant</label>
 		</languageKey>
 	</data>
 </T3locallang>
