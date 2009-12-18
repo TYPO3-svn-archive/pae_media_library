@@ -131,14 +131,14 @@
         <config>
          <type>select</type>
          <items type="array">
-          <numIndex index="0" type="array">
-           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:sorting_direction_asc</numIndex>
-           <numIndex index="1">ASC</numIndex>
-           </numIndex>
-		  <numIndex index="1" type="array">
+          <numIndex index="1" type="array">
            <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:sorting_direction_desc</numIndex>
            <numIndex index="1">DESC</numIndex>
           </numIndex>
+		   <numIndex index="0" type="array">
+           <numIndex index="0">LLL:EXT:pae_media_library/locallang_db.xml:sorting_direction_asc</numIndex>
+           <numIndex index="1">ASC</numIndex>
+           </numIndex>
           </items>
          <minitems>0</minitems>
          <maxitems>1</maxitems>
