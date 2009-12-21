@@ -333,11 +333,12 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 					//file properties'.chr(10).
 					$meta.
 					'file: "'.$media_src.'",'.chr(10).
-					(($this->lConf['streaming_base_url'] != "")?'streamer: "'.$this->lConf['streaming_base_url'].'",':'').chr(10).'
+					(($this->lConf['streaming_base_url'] != "")?'streamer: "'.$this->lConf['streaming_base_url'].'",':'').'
 					
 					
-				  //layout
-				  '.$this->getFlashvar('controlbar', $controlbar, "bottom").
+				  //layout';
+				  
+				  $layout = $this->getFlashvar('controlbar', $controlbar, "bottom").
 				  $this->getFlashvar('width', $width, "280").
 				  $this->getFlashvar('height', $height, "400").
 				  $this->getFlashvar('icons', $icons, "true").
@@ -347,11 +348,10 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 				  $this->getFlashvar('screencolor', $screencolor, "").
 				  $this->getFlashvar('icons', $icons, "true").
 				  $this->getFlashvar('logo', $logo, "").
-				  $this->getFlashvar('skin', $skin, "").
-				  '
-				  
+				  $this->getFlashvar('skin', $skin, "");
+			
 				  //behavior
-				  '.$this->getFlashvar('playlist', $playlist, "none").
+				  $behavior = $this->getFlashvar('playlist', $playlist, "none").
 				  $this->getFlashvar('playlistsize', $playlistsize, "180").
 				  $this->getFlashvar('smoothing', $smoothing, "true").
 				  $this->getFlashvar('stretching', $stretching, "uniform").
@@ -367,11 +367,15 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 				  $this->getFlashvar('shuffle', $shuffle, "false").
 				  $this->getFlashvar('volume', $volume, "90").
 				  $this->getFlashvar('plugins', $plugins, "").
-				  $this->getFlashvar('debug', $debug, "").
-				  '};
+				  $this->getFlashvar('debug', $debug, "");
+				  
+			//remove ','.chr(10) in the end of the string for IE7 Javascriopt engine compatibility
+			$flashCode[] = substr_replace($layout.$behavior,'',-2) ;	
+			
+			$flashCode[] = '};
 				var params = {
 				  allowfullscreen: "true",
-				  allowScriptAccess: "always",
+				  allowScriptAccess: "always"
 				};
 				var attributes = {
 				  id: "myDynamicContent",
@@ -506,7 +510,7 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 	 * This optimizes the output
 	 */
 	function getFlashvar($flashvarName, $value, $doNotOutputIfMatchesThisValue){
-		return ($value != $doNotOutputIfMatchesThisValue)?($flashvarName.': "'.$value.'",').chr(10):'';
+		return ($value != $doNotOutputIfMatchesThisValue)?($flashvarName.': "'.$value.'",'.chr(10)):'';
 	}
 	
 	function getMediaSrc($xml){
@@ -570,6 +574,8 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 	function writeXML() {
 		
 		//print_r($this->piVars);
+		
+		//$GLOBALS['TYPO3_DB']->quoteStr($value,$this->tableName)
 		
 		$format = $this->piVars["format"];
 		$subFormat = $this->piVars["subFormat"];
