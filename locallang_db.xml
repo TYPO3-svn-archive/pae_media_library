@@ -259,7 +259,7 @@
 			<label index="title">Titre</label>
 			<label index="filename">nom de fichier</label>
 			<label index="uid">Uid de l'enregistrement DAM</label>
-			<label index="media_type">Typde du média</label>
+			<label index="media_type">Type de du média</label>
 			<label index="sorting_direction">Sens du tri:</label>
 			<label index="sorting_direction_asc">Ascendant</label>
 			<label index="sorting_direction_desc">Descendant</label>

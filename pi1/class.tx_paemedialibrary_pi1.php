@@ -694,14 +694,17 @@ class tx_paemedialibrary_pi1 extends tslib_pibase {
 				'SELECT' => "*",
 				'FROM' => "tx_dam",
 				'WHERE' => "uid IN (".$records.")".$this->cObj->enableFields('tx_dam'),
+				'ORDER BY' => "FIELD( uid, ".$records.")"
 			);
 			
-			//echo "SELECT ".$queryParts['SELECT']." FROM ".$queryParts['FROM']." WHERE ".$queryParts['WHERE']." ;<br />";
+			//echo "SELECT ".$queryParts['SELECT']." FROM ".$queryParts['FROM']." WHERE ".$queryParts['WHERE']." ORDER BY ".$queryParts['ORDER BY'].";<br />";
 			
 			$result = $GLOBALS['TYPO3_DB']->exec_SELECTquery(
 				$queryParts['SELECT'],
 				$queryParts['FROM'],
-				$queryParts['WHERE']
+				$queryParts['WHERE'],
+				'',
+				$queryParts['ORDER BY']
 			) or die("ERROR: tx_paemedialibrary->class.xml_output->writeXML(req4): " .$GLOBALS['TYPO3_DB']->sql_error());
 		
 		}
